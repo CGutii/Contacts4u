@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script src="js/script.js" charset="utf-8"></script>
+    <title>Contact Editor</title>
+    <script type="text/javascript">
+	   document.addEventListener('DOMContentLoaded', function()
+	    {
+		      readCookie();
+	    }, false);
+	</script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <h2 id="userName" style="color: white"></h2>
+      </div>
+      <div class="header-center">
+        <h3>Contacts 4 U </h3> <img src="images\icons8-contact-64.png" alt="">
+      </div>
+      <div class="header-right">
+        <button type="button" id="logoutButton" class="btn-hover" onclick="doLogout();" > Log Out </button>
+      </div>
+    </div>
+
+    <div class="contacts-container">
+
+      <div class="add-container">
+        <h2 style="color:white">Add Contact Information</h2>
+        <div class="addContact">
+          <input type="text" name="contactFirst" id="contactFirst" value="" placeholder="First Name"><br>
+          <input type="text" name="contactLast" id="contactLast" value="" placeholder="Last Name"><br>
+          <input type="email" name="contactEmail" id="contactEmail" value="" placeholder="example@gmail.com"><br>
+          <input type="tel" name="" value="" id="contactNumber"maxlength="14" placeholder="###-###-####"><br>
+          <button type="button" class="btn-hover" id="addContact-btn"  name="button" onclick="addContact();">Add Contact</button>
+        </div>
+        <div class="successful-registration">
+          <hr id = "addContact-bar"style="visibility: hidden; width: 75%;">
+          <h2 id = "addContact" style="color:white"></h2>
+        </div>
+
+      </div>
+      <div class="search-container">
+        <h2 style="color:white">Search Contact Below</h2>
+        <div class="search-bar">
+          <!-- <h2 style="color:white">Search Contact</h2> -->
+          <input type="text" name="searchText" id="searchText" value="" placeholder="Enter Firstname" >
+          <button type="button" name="searchButton" onclick="searchContact();"> <img src="images\icons8-magnifier-16.png" alt="" > </button>
+        </div>
+        <div class="returned-contacts">
+          <p id="contactList"></p>
+
+
+        </div>
+        <!-- <div class="search-bar">
+          <input type="search" name="searchText" id="searchText" value="" placeholder="Enter Firstname" ><button type="button" name="searchButton" onclick="searchContact();"> <img src="images\icons8-magnifier-16.png" alt="" > </button>
+          <div class="auto-complete-box">
+            <ol id = "contactList">
+              <li>Neil Armstrong</li>
+              <li>Alan Bean</li>
+              <li>Peter Conrad</li>
+              <li>Edgar Mitchell</li>
+              <li>Alan Shepard</li>
+            </ol>
+
+          </div>
+
+        </div> -->
+
+
+        <!-- <div class="returned-contacts">
+          <p id="contactList"></p>
+
+
+
+        </div> -->
+        <div class="contact-btns" id = "btn-visibility">
+          <button type="button" class="btn-hover" id="editContact-btn" name="button">Edit Contact</button>
+          <button type="button" class="btn-hover" id="deleteContact-btn"name="button">Delete Contact</button>
+        </div>
+      </div>
+      <!-- <script type="text/javascript">
+        let sug
+        const inputBox = document.getElementById("searchText");
+        inputBox.onkeyup = (e) =>
+        {
+          console.log(e.target.value);
+          // let userDate = e.target.value;
+          // let emptyArray = [];
+          // if()
+        }
+      </script> -->
+  </body>
+</html>

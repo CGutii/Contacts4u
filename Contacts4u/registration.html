@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <div class="body">
+      <div class="header">
+        <header id="head">
+          <h3>Contacts 4 U </h3> <img src="images\icons8-contact-64.png" alt="">
+        </header>
+      </div>
+      <div class="registrationContainer">
+        <div class="registerBox">
+          <h3>Create Account</h3>
+          <p>First Name</p>
+          <input type="text" name="createFirstName" id="createFirstName"  value="">
+          <p>Last Name</p>
+          <input type="text" name="createLastName" id="createLastName"value="">
+          <p>Login</p>
+          <input type="text" name="createLogin" id="createLogin"value="">
+          <p>Password</p>
+          <input type="password" name="createPassword" id = "createPassword"value=""><br><br>
+
+
+
+          <div class="submit-btn">
+            <button type="button" class="btn-hover" name="submitButton" id = "submitButton" onclick="registerUser();">Create Account</button>
+
+<button class = "btn-hover" id="idiotButton"  onclick="history.back()">Return Home</button>
+
+
+          </div>
+
+
+          <div class="successful-registration">
+            <hr id = "register-bar"style="visibility: hidden">
+            <h3 id = "register-text"></h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- <script type="text/javascript">
+      let btnClear = document.getElementById('submitButton');
+      let inputs = document.querySelectorAll('input');
+      btnClear.addEventListener('click', () =>
+      {
+        inputs.forEach(input => input.value = '');
+      });
+    </script> -->
+
+
+  </body>
+</html>

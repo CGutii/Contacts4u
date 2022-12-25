@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Manager Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <div class="body">
+      <div class="header">
+        <header id="head">
+          <h3>Contacts 4 U </h3> <img src="images\icons8-contact-64.png" alt="">
+
+        </header>
+      </div>
+      <div class="loginForm">
+        <div class="loginBox">
+          <h2>Login to your Account</h2>
+          <div class="signIn">
+            <input type="text" name="loginName" id="loginName" value="" placeholder="Username" required><br>
+            <input type="password" name="loginPassword" id = "loginPassword"value="" placeholder="Password" required><br>
+            <button type="button" class="btn-hover" id = "loginButton"name="loginButton" onclick="doLogin();">Log in</button>
+            <hr>
+            <h3 style="margin: 0px">Don't have an account?</h3>
+            <button type="button" class="btn-hover" id="registerButton" name="registerButton" onclick="window.location.href = 'http://contacts4u.info/registration.html'">Register</button>
+            <br>
+            <span id="loginResult"></span>
+          </div>
+
+        </div>
+        <div class="signupBox">
+          <img src="images/loginIllustration.png" alt="" width="400px" height="263px">
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
